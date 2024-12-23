@@ -1,0 +1,96 @@
+.raleway-300 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.main-carousel  {
+    margin: 0 20px;
+}
+.main-carousel .swiper-slide {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    color: #212121;    
+}
+.main-carousel .swiper-slide .raleway-600 {
+    font-family: "Raleway";
+    text-transform: uppercase;
+    border-bottom: 1px solid #B6B6B6;
+    letter-spacing: 12px;
+    line-height: 1.3;
+    display: inline-flex; 
+    max-width:fit-content ;
+    font-weight: 600;
+    font-size: 60px;
+    margin: 0; 
+}
+.main-carousel img {
+    width: 100%;
+}
+.main-carousel .swiper-content {
+    position: absolute;
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+}
+#a {
+    right: 0;
+    align-items: center;
+}
+#a .raleway-600 {
+    border-bottom: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;     
+}
+#a .raleway-600 span::after {
+    content: "Is";
+    text-transform: capitalize; 
+    font-weight: normal;
+    padding: 0 20px; 
+}
+ .element::after{
+    content: "available here";
+    text-transform: capitalize;
+    font-weight: normal;
+    padding-left: 80px;  
+}
+#b {
+    align-items: flex-end;
+    right: 0;   
+}
+.main-carousel .swiper-content h2 {      
+     letter-spacing: 15px;
+     text-transform: uppercase;
+     order: -1;  
+     font-size: 18px; 
+}
+.main-carousel .swiper-content p {
+    line-height: 2.5; 
+    font-size: 15px; 
+}
+.main-carousel .swiper-content a {   
+    background-color: #fd1f1f;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;  
+    letter-spacing: 4px;
+    display: inline-flex;
+    justify-content: center;
+    padding:  20px;
+    max-width: 150px;
+    margin: 30px 0;
+}
+.swiper-pagination {
+    display: inline-block;
+    text-align: left;
+    margin: 100px;
+}
+
+    

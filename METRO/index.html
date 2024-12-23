@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>METRO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--swiper carousel-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="raleway-300">
+    <header>
+        <div class="swiper main-carousel">
+            <ol class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div class="swiper-content">
+                        <h1 class="raleway-600">Rak Sunglass</h1>
+                        <h2>2016 collection</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Architecto veritatis ea
+                            dolorum suscipit! Explicabo, illum.</p>
+                        <a href="">SHOP NOW</a>
+                    </div>
+                    <img src="images/1.webp" alt="slide-1">
+                </li>
+                <li class="swiper-slide">
+                    <div class="swiper-content" id="a">
+                         <h1 class="raleway-600"><span>New collection</span>
+                         <div class="element"></div>  
+                            </h1>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, ut?</p>
+                         <a href="">SHOP NOW</a>
+                    </div>
+                    <img src="images/2.webp" alt="slide-2">
+                </li>
+                <li class="swiper-slide">
+                    <div class="swiper-content" id="b">
+                        <h1 class="raleway-600">Rak Sunglass</h1>
+                        <h2>2016 collection</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Architecto veritatis ea dolorum
+                suscipit! Explicabo, illum.</p>
+                        <a href="#">SHOP NOW</a>
+                    </div>
+                    <img src="images/2.webp" alt="slide-3">
+                </li>
+            </ol>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+    <!--swiper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--initialize swiper-->
+    <script>
+        var swiper = new Swiper(".main-carousel", {
+            spaceBetween: 30,
+            effect: "fade",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+        pauseOnMouseEnter: true,
+      },
+        });
+    </script>
+</body>
+</html>
