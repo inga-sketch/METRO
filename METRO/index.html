@@ -8,15 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/normalize.css">
     <!--swiper carousel-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="raleway-300">
     <header>
-        <div class="swiper main-carousel">
+        <div class="swiper main-carousel" id="s-1">
             <ol class="swiper-wrapper">
                 <li class="swiper-slide">
                     <div class="swiper-content">
@@ -29,21 +32,22 @@
                     <img src="images/1.webp" alt="slide-1">
                 </li>
                 <li class="swiper-slide">
-                    <div class="swiper-content" id="a">
-                         <h1 class="raleway-600"><span>New collection</span>
-                         <div class="element"></div>  
-                            </h1>
-                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, ut?</p>
-                         <a href="">SHOP NOW</a>
+                    <div class="swiper-content">
+                        <h1 class="raleway-600"><span>New collection</span>
+                        </h1>
+                        <div class="element"></div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, ut?</p>
+                        <a href="">SHOP NOW</a>
                     </div>
                     <img src="images/2.webp" alt="slide-2">
                 </li>
                 <li class="swiper-slide">
-                    <div class="swiper-content" id="b">
+                    <div class="swiper-content">
                         <h1 class="raleway-600">Rak Sunglass</h1>
                         <h2>2016 collection</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Architecto veritatis ea dolorum
-                suscipit! Explicabo, illum.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Architecto veritatis ea
+                            dolorum
+                            suscipit! Explicabo, illum.</p>
                         <a href="#">SHOP NOW</a>
                     </div>
                     <img src="images/2.webp" alt="slide-3">
@@ -64,11 +68,49 @@
                 clickable: true,
             },
             autoplay: {
-        delay: 2500,
-        disableOnInteraction: true,
-        pauseOnMouseEnter: true,
-      },
+                delay: 2500,
+                disableOnInteraction: true,
+                pauseOnMouseEnter: true,
+            },
         });
     </script>
+    <div class="row">
+        <div class="slide 1">
+            <a href="#s-1"><img src="images/home4-services1.jpg" alt="slide-4"></a>
+            <div class="media">
+                <span>360 gear</span>
+                <h3><a href="#s-1">brand <br> name</a></h3>
+                <p>camera</p>
+                <a href="#">shop now
+                    <br>
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="slide 2">
+            <a href="#s-1"><img src="images/home4-services2.jpg" alt="slide-5"></a>
+            <div class="media">
+                <span>casual shoes</span>
+                <h3><a href="#s-1">brand <br> name</a></h3>
+                <p>top <br>brand</p>
+                <a href="#">shop now
+                    <br>
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="slide 3">
+            <a href="#s-1"><img src="images/home4-services1.jpg" alt="slide-6"></a>
+            <div class="media">
+                <span>100% leather</span>
+                <h3><a href="#s-1">brand name</a></h3>
+                <p>mountain</p>
+                <a href="#">shop now
+                    <br>
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

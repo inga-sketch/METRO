@@ -1,15 +1,13 @@
 .raleway-300 {
     font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 }
 .main-carousel  {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 .main-carousel .swiper-slide {
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     display: flex;
@@ -39,29 +37,29 @@
     justify-content: center;
     padding: 0 100px;
 }
-#a {
+.main-carousel .swiper-slide:nth-child(2) .swiper-content{
     right: 0;
     align-items: center;
 }
-#a .raleway-600 {
+.main-carousel .swiper-slide:nth-child(2) .swiper-content .raleway-600 {
     border-bottom: none;
     letter-spacing: 1px;
     text-transform: uppercase;
     display: block;     
 }
-#a .raleway-600 span::after {
+.main-carousel .swiper-slide:nth-child(2) .swiper-content .raleway-600 span::after {
     content: "Is";
     text-transform: capitalize; 
     font-weight: normal;
-    padding: 0 20px; 
+    padding: 0 20px;  
 }
- .element::after{
+.main-carousel .element::after{
     content: "available here";
     text-transform: capitalize;
     font-weight: normal;
     padding-left: 80px;  
 }
-#b {
+.main-carousel .swiper-slide:last-child .swiper-content {
     align-items: flex-end;
     right: 0;   
 }
@@ -90,7 +88,75 @@
 .swiper-pagination {
     display: inline-block;
     text-align: left;
-    margin: 100px;
+    margin: 100px;    
 }
+  .row .slide {
+     display: inline-block;
+     margin: 30px 15px;
+     background-color: #f1f1f1;
+     width: 31.38%;
+     vertical-align: top;
+  } 
+  .row .slide .media {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #212121;
+    display: inline-block;
+    box-sizing: border-box; 
+    padding: 50px 0 10px 40px;
+  }
+  .row .slide:first-child .media {
+    float: right;
+  }
+  .row .slide:nth-child(2) .media {
+    float: right;
+  }
+  .row .media span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #212121;
+    letter-spacing: 2px;
+  } 
+  .row .media h3{
+    font-family: 'Raleway';
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-size: 26px;
+    line-height: 1.5;
+    text-decoration: none;
+    padding: 10px 0;
+  }
+  .row .media h3>a {
+    color: #212121;
+    text-decoration: none;
+  }
+  .row .media p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 13px;
+    color: #212121;
+    font-weight: 500;
+    margin: 0; 
+  }
+  .row .media p+a{
+    display: block;
+    background-color: #fd1f1f;
+    color: white;
+    font-family: 'Open Sans';
+    padding: 10px 20px;
+    margin: 30px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 25px;
+    float: right;
+  }
+  .row .media p+a:hover {
+    background-color: white;
+    color: #212121;
+  }
 
-    
+  .row .slide:last-child .media {
+    display: block;
+  }
+  
